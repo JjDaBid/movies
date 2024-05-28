@@ -4,10 +4,12 @@ import axios from 'axios';
 import Home from './pages/Home';
 import NavBar from './components/NavBar';
 import './App.css';
+import Contacto from './pages/Contacto';
 
 const AppRoutes = ({ movies, selectMovie }) => {
   let routes = useRoutes([
-    { path: "/", element: <Home movies={movies} selectMovie={selectMovie} /> }
+    { path: "/", element: <Home movies={movies} selectMovie={selectMovie} /> },
+    { path: "/contacto", element: <Contacto /> }
   ]);
   return routes;
 }

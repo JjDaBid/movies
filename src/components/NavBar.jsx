@@ -30,6 +30,14 @@ const NavBar = ({ setSearchKey, searchMovies }) => {
             <li className="nav-item">
               <a className="nav-link text-white" href="#">Series</a>
             </li>
+            <li className="nav-item">
+                <NavLink
+                    to='/contacto'
+                    className="nav-link active text-white"
+                >
+                    Contacto
+                </NavLink>              
+            </li>
           </ul>
         </div>
         <div className='ms-4'>
